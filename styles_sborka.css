@@ -165,4 +165,25 @@ body {
       display: none;
     }
   }
-  
+}
+.carousel-item {
+  width: 100%;
+  border: #000000;
+  border-radius: 12px;
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+
+}
+    
+@media (max-width: 576px) {
+  /* Стили для маленьких экранов */
+  .carousel-item {
+    height: 100%; /* Изменяем высоту слайдов для маленьких экранов */
+    
+  }
+}
+img{
+  object-fit: fill;
+  border: #000000;
+  border-radius: 12px;
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+}
