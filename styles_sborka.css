@@ -145,7 +145,7 @@ body {
     transform: rotate(45deg);
     top: 0;
   }
-  @media (min-width: 1650px) {
+  @media (min-width: 767px) {
     .nav {
       max-height: none;
       top: 0;
@@ -166,24 +166,53 @@ body {
     }
   }
 }
-.carousel-item {
-  width: 100%;
-  border: #000000;
+
+
+h1 { text-align:center; }
+p.main { text-align:justify; } 
+p { text-indent:30px; } 
+
+.product{
+  width: 250px;
+  padding: 10px;
+  border: 1px solid black;
   border-radius: 12px;
   box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  background-color: #fff;
+}
+.product img{
+  height: 200px;
+  width: 100%;
+}
+
+.products{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
 }
-    
-@media (max-width: 576px) {
-  /* Стили для маленьких экранов */
-  .carousel-item {
-    height: 100%; /* Изменяем высоту слайдов для маленьких экранов */
-    
-  }
-}
-img{
-  object-fit: fill;
-  border: #000000;
+.product button{
+  background-color: #c5f7d4; /* Цвет фона кнопки */
+  color: rgb(0, 0, 0); /* Цвет текста на кнопке */
+  padding: 10px 20px; /* Отступы внутри кнопки */
+  border: 4px;
+  color: black;
   border-radius: 12px;
   box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
 }
+@media (max-width: 767px){
+  .products{
+    flex-direction: column;
+  }
+  .product{
+    width: 100%;
+  }
+  
+}
+
+.scrin{
+  border: 4px;
+  border-radius: 12px;
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+}
+

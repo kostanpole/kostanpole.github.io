@@ -141,7 +141,7 @@ ul {
   transform: rotate(45deg);
   top: 0;
 }
-@media (min-width: 1650px) {
+@media (min-width: 767px) {
   .nav {
     max-height: none;
     top: 0;
@@ -292,7 +292,7 @@ img {
   
     padding: 30px;
   }
-  @media (max-width: 760px){
+  @media (max-width: 767px){
     .me{
       flex-direction: column;
     }
